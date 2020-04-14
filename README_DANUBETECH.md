@@ -26,7 +26,7 @@ Then
 
 ### Output of this Tests
 
-*  This project validates the following aspects of DID-Documents:
+This project validates the following aspects of DID-Documents:
 
     1. Public Keys Validation: 
         - EcdsaSecp256k1VerificationKey2019
