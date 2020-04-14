@@ -8,7 +8,7 @@ Then
                 
     git clone https://github.com/danubetech/did-core-registries
     
-Then in the file scripts/build-resolver-cache.js modify the line 33 to as follows
+Then in the file scripts/build-resolver-cache.js modify the line 37 to as follows
 
     curl -s --max-time 10 https://localhost:8080/1.0/identifiers/${did} | jq ".didDocument" > ./test-dids/${did}.json; 
     
@@ -18,7 +18,7 @@ Then
     npm run build-resolver-cache
     npm test
 
-**Note:** `npm run build-resolver-cache` downloads Did Documents which are later validated. This command is not needed for every test run, only if the test samples should be updated.
+**Note:** `npm run build-resolver-cache` downloads DID Documents which are later validated. This command is not needed for every test run, only if the test samples should be updated.
 
 ## Public Universal Resolver on uniresolver.io
 
