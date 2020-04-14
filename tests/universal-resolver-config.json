@@ -138,6 +138,12 @@
       "testIdentifiers": [
         "did:key:z6MkfBth5EfE8HgwtA9YfGgBCqqerTaeSKPPjy5aFHumngqj"
       ]
+    },
+    {
+      "pattern": "^(did:echo:.+)$",
+      "image": "echoprotocol/uni-resolver-driver-did-echo",
+      "tag": "latest",
+      "testIdentifiers": [ "did:echo:1.1.25.0" ]
     }
   ]
 }
