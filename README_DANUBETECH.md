@@ -39,3 +39,7 @@ This project validates the following aspects of DID-Documents:
         - Document needs to be an Object
     3.  json-ld Validation
     4.  json-schema Validation 
+
+## Adding a DID Method for testing
+
+Visit file `tests/universal-resolver-config.json` and update the DID methods that should be tested. Note, that this file is copy from the `config.json` file from the universal-resolver project, so copy/paste of the full config will work fine.
