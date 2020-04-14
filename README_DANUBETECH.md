@@ -4,7 +4,7 @@
 
  Start the Universal Resolver by following the guide given [here](https://github.com/decentralized-identity/universal-resolver/blob/master/README.md).
 
-Then,
+Then
                 
     git clone https://github.com/danubetech/did-core-registries
     
@@ -16,9 +16,11 @@ Then
         
     npm install 
     npm run build-resolver-cache
-    npm  Test
-    
-## Validate uniresolver.io domain
+    npm test
+
+**Note:** `npm run build-resolver-cache` downloads Did Documents which are later validated. This command is not needed for every test run, only if the test samples should be updated.
+
+## Public Universal Resolver on uniresolver.io
 
 * Go to the git Action Flow of [DID-Core-Registry](https://github.com/danubetech/did-core-registries/actions/runs/66531901).
 * Select "Run Schemas" from "Tests"([here](https://github.com/danubetech/did-core-registries/runs/545526765?check_suite_focus=true)).
@@ -32,8 +34,8 @@ This project validates the following aspects of DID-Documents:
         - EcdsaSecp256k1VerificationKey2019
         - Ed25519VerificationKey2018
     2. DID Document Spec Validation:        
-        - Looking for Document ID and need to be a String ID.
-        - Document consist of valid  Pattern.        
-        - Document need to be an Object.
+        - Checking Document ID and validates that it is a String
+        - Document consists of valid Pattern        
+        - Document needs to be an Object
     3.  json-ld Validation
     4.  json-schema Validation 
