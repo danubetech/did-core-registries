@@ -18,7 +18,7 @@ Then
     npm run build-resolver-cache
     npm  Test
     
-## validate uniresolver.io domain
+## Validate uniresolver.io domain
 
 * Go to the git Action Flow of [DID-Core-Registry](https://github.com/danubetech/did-core-registries/actions/runs/66531901).
 * Select "Run Schemas" from "Tests"([here](https://github.com/danubetech/did-core-registries/runs/545526765?check_suite_focus=true)).
